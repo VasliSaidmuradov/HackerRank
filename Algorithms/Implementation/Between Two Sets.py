@@ -11,9 +11,11 @@ def getTotalX(a, b):
     for num in a:
       if i % num != 0:
         a_pass = False
+        break
     for num in b:
       if num % i != 0:
         b_pass = False
+        break
     if a_pass and b_pass:
       count += 1
 
